@@ -1,0 +1,39 @@
+// Шапка сайта
+.header {
+    background-color: $yellow_color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item {
+        @extend %items;
+        text-align:center;
+
+    }
+
+    &__top {
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+}
+
+.social {
+    
+
+    &__items {
+        list-style-type:none;
+        display:flex;
+    }
+
+    &__item {
+        margin-left:15px;
+        font-size: 24px;
+
+        &:first-child {
+            margin-left:0;
+        }
+    }
+}
+
+
